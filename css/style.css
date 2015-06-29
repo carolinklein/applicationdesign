@@ -1,37 +1,10 @@
-/* MARTIN ADDITIONS */
-.absoluteBottom {
-	position: absolute;
-	bottom: 40px;
-	width: 40%;
-	left: 50%;
-	margin-left: -20%;
-}
-.absoluteBottom h1 {
-	margin: 0;
-	padding: 0;
-	font-size: 20px;
-	text-align: center;
-	color: #fff;
-}
-.absoluteBottom h2 {
-	margin: 0;
-	padding: 0;	
-	font-size: 20px;
-	text-align: center;
-	color: #fff;
-}
-.postionRelative {
-	position: relative;
-}
-/* MARTIN ADDITIONS */
-
-
 @font-face {
-    font-family: "Zwo Pro", sans-serif;
-    /*src: url(zwo_pro.woff);*/
+	font-family: "Zwo Pro", sans-serif;
+	/*src: url(zwo_pro.woff);*/
 }
 
 body {
+	margin-top: 0px;
 	font-family: "Zwo Pro";
 	color: rgb(77,77,77);
 }
@@ -90,16 +63,46 @@ h6 {
 
 titel {
 	font-size: 50px;
-	color: rgb(255,255,255);
-	text-align: center;
 	font-weight: bold;
+	color: rgb(255,255,255);
+
 }
 
 subtitel {
 	font-size: 20px;
 	color: rgb(255,255,255);
-	text-align: center;
+
 }
+
+/* MARTIN ADDITIONS */
+.absoluteBottom {
+	position: absolute;
+	bottom: 230px;
+	width: 50%;
+	left: 50%;
+	margin-left: -20%;
+	z-index: 10;
+}
+.absoluteBottom h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 50px;
+	text-align: center;
+	color: #fff;
+}
+.absoluteBottom h2 {
+	margin: 0;
+	padding: 0;	
+	font-size: 20px;
+	font-weight: lighter;
+	text-align: center;
+	color: #fff;
+}
+.postionRelative {
+	position: relative;
+}
+/* MARTIN ADDITIONS */
+
 
 /*fliesstext*/
 p {
@@ -108,8 +111,6 @@ p {
 	font-weight: normal;
 	line-height: 1,5625em; /*25px*/
 	color: rgb(77,77,77);
-
-	margin-bottom: 80px;
 }
 
 /*italic*/
@@ -120,23 +121,45 @@ span {
 	color: rgb(77,77,77);
 }
 
-.nav {
-	background-color: rgb(255,255,255);
-	height: 50px;
-	width: 100%;
+header {
 	position: fixed;
-	z-index: 2;
-	box-shadow: 0px 1px 1px #4D4D4D;}
+}
 
-.navi {
-	/*font-weight: 200;*/
-	font-size: 1,5em;
+.navbar .navbar-default {
+	z-index: 20;
+}
+
+.navbar {
+	min-height: 0;
+	border: none;
+}
+
+.navbar-default{
+	background-color: transparent;
+	border-color: transparent;
+	margin-bottom: 0;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+}
+
+.navbar-collapse {
+	background-color: rgb(255,255,255);
+	padding: 0;
+}
+
+.nav-tabs>li>a {
 	font-weight: bold;
-	color: rgb(77,77,77);
-	float: right;
+}
 
-	margin-top: 15px;
-	margin-right: 50px;
+.img_relative{
+	position: relative;
+	background-color: white;
+}
+
+.img_header {
+	position: relative;
 }
 
 a:link, a:hover, a:active, a:focus, a:visited {
@@ -177,47 +200,96 @@ a:hover{
 	animation: pfeilAnimation 2s ease-in-out infinite;
 }
 
+.row-margin-top {
+	margin-top: 750px;
+}
+
 .box_welcome {
-	background-color: rgb(255,255,255);
 	text-align: center;
+	padding: 40px 40px 40px 40px;
+}
+
+.welcome {
+	padding: 0;
+	height: 400px;
+	background-color: white;
 }
 
 .gruen_box {
 	background-color: rgb(121,173,38);
+	height: 400px;
+	margin: 0;
 }
 
-.container.angebot {
+.box_milon {
+	padding: 40px 200px 40px 100px;
+}
+
+.container .zirkel {
+	background-color: white;
+	height: 500px;
+}
+
+.container .angebot {
 	background-color: rgb(121,173,38);
-}
-
-.img_milon {
-	padding: 0px;
+	height: 500px;
 }
 
 .italic_box {
-	margin-top: 130px;
-	margin-bottom: 130px;
+	background-color: white;
+	padding-top: 130px;
+	padding-bottom: 130px;
 }
 
-.btn_lesmills {
-	/*margin-left: 90px;
-	margin-right: 90px;*/
+.box_background {
+	background-color: rgb(121,173,38);
+	height: 400px;
+}
+
+.background_weiss {
 	margin-top: 90px;
-	margin-bottom: 270px;
+	background-color: white;
+	height: 600px;
+}
+
+.abstand {
+	margin: 0;
 }
 
 .btn {
-	width: 250px;
+	background-color: white;
 	height: 250px;
+	width: 250px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: rgb(121,173,38);
 	border-radius: 0px;
+	padding: 30px;
 }
 
-.btn:hover {
-	background-color: rgb(77,77,77);
+/*.btn .first-link {
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;     
 }
+
+.first-link {
+	margin-top: 0em;
+}
+
+.btn:hover .first-link {
+	margin-top: -4em;
+}
+*/
+
+
+.btnActive {
+	background-color: green;
+	color: blue;
+}
+
 
 .btn_icon {
 	padding-top: 90px;
@@ -236,6 +308,10 @@ a:hover{
 	background-color: rgb(121,173,38);
 }
 
+.background-weiss2 {
+	background-color: white;
+	height: 400px;
+}
 .box_relex {
 	text-align: center;
 }
