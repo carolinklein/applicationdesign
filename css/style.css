@@ -1,9 +1,323 @@
-.box {
-	background-color: red;
-	height: 200px;
-
+@font-face {
+    font-family: "Zwo Pro", sans-serif;
+    /*src: url(zwo_pro.woff);*/
 }
+
+body {
+	font-family: "Zwo Pro";
+	color: rgb(77,77,77);
+}
+
+/*grüne headline*/
+h1 {
+	font-size: 24px;/*1,5em*/
+	font-weight: bold;
+	line-height: 3,75em;
+	color: rgb(121,173,38);
+
+	margin-bottom: 60px;
+}
+
+/*weiße headline*/
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 3,75em;
+	color: rgb(255,255,255);
+
+	margin-bottom: 60px;
+}
+
+/*subhead*/
+h3 {
+	font-size: 21px;/*0,875em*/
+	font-weight: bold;
+	color: rgb(77,77,77);
+
+	margin-bottom: 40px;
+	margin-top: 70px;
+}
+
+/*sub-subhead*/
+h4 {
+	font-size: 14px;/*0,875em*/
+	font-weight: bold;
+	color: rgb(77,77,77);
+}
+
+/*btn*/
+h5 {
+	font-size: 0,875em;
+	font-weight: bold;
+	color: rgb(77,77,77);
+	text-align: center;
+}
+
+/*sub-subhead in gruen*/
+h6 {
+	font-size: 0,875em;
+	font-weight: bold;
+	color: rgb(121,173,38);
+}
+
+titel {
+	font-size: 50px;
+	color: rgb(255,255,255);
+	text-align: center;
+	font-weight: bold;
+}
+
+subtitel {
+	font-size: 20px;
+	color: rgb(255,255,255);
+	text-align: center;
+}
+
+/*fliesstext*/
+p {
+	font-size: 14px; /*0,875em*/
+	line-height: 23px;
+	font-weight: normal;
+	line-height: 1,5625em; /*25px*/
+	color: rgb(77,77,77);
+
+	margin-bottom: 80px;
+}
+
+/*italic*/
+span {
+	font-size: 1,125em; /*18px*/
+	line-height: 30px;
+	font-style: italic;
+	color: rgb(77,77,77);
+}
+
+.nav {
+	background-color: rgb(255,255,255);
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	box-shadow: 0px 1px 1px #4D4D4D;}
+
+.navi {
+	/*font-weight: 200;*/
+	font-size: 1,5em;
+	font-weight: bold;
+	color: rgb(77,77,77);
+	float: right;
+
+	margin-top: 15px;
+	margin-right: 50px;
+}
+
+a:link, a:hover, a:active, a:focus, a:visited {
+	color: inherit;
+	text-decoration: none;
+} 
+
+a:hover{
+	text-decoration: none;
+	color: rgb(121,173,38);
+}
+
+.titel {
+	position: absolute;
+
+	margin-top: 600px;
+	margin-left: 500px;
+}
+
+.subtitel {
+	position: absolute;
+
+	margin-top: 680px;
+	margin-left: 540px;
+}
+
+.pfeil {
+	position: absolute;
+	margin-top: 770px;
+	margin-left: 720px;
+
+	width: 20px;
+	height: 16px;
+
+	-o-animation: pfeilAnimation 2s ease-in-out infinite;
+	-webkit-animation: pfeilAnimation 2s ease-in-out infinite;
+	-moz-animation: pfeilAnimation 2s ease-in-out infinite;
+	animation: pfeilAnimation 2s ease-in-out infinite;
+}
+
+.box_welcome {
+	background-color: rgb(255,255,255);
+	text-align: center;
+}
+
+.gruen_box {
+	background-color: rgb(121,173,38);
+}
+
+.container.angebot {
+	background-color: rgb(121,173,38);
+}
+
+.img_milon {
+	padding: 0px;
+}
+
+.italic_box {
+	margin-top: 130px;
+	margin-bottom: 130px;
+}
+
+.btn_lesmills {
+	/*margin-left: 90px;
+	margin-right: 90px;*/
+	margin-top: 90px;
+	margin-bottom: 270px;
+}
+
+.btn {
+	width: 250px;
+	height: 250px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(121,173,38);
+	border-radius: 0px;
+}
+
+.btn:hover {
+	background-color: rgb(77,77,77);
+}
+
+.btn_icon {
+	padding-top: 90px;
+	padding-bottom: 10px;
+}
+
+.rand {
+	padding: 0px;
+}
+
+.img_galerie {
+	float: left;
+}
+
+.img:hover {
+	background-color: rgb(121,173,38);
+}
+
+.box_relex {
+	text-align: center;
+}
+
+.btn_icon2 {
+	float: left;
+	padding: 23px;
+}
+
+.btn2 {
+	height: 120px;
+	padding-top: 25px;
+	padding-left: 40px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(121,173,38);
+	border-radius: 0px;
+}
+
+.btn2:hover {
+	background-color: rgb(77,77,77);
+}
+
+.box_dynamic {
+	padding: 0px;
+}
+
+.box_dynamic.gruen {
+	background-color: rgb(121,173,38);
+}
+
+.box_kontakt {
+	text-align: center;
+	height: 140px;
+}
+
+.box_kontakt_txt {
+	margin-top: 70px;
+}
+
+.box_pull_down {
+	width: 100%;
+	height: 60px;
+	background-color: rgb(121,173,38);
+	text-align: center;
+	padding-top: 10px;
+}
+
+.pfeil_karte {
+	margin-right: 20px;
+}
+
+.icon_map {
+	float: left;
+}
+
+.box_back {
+	background-color: rgb(77,77,77);
+	height: 700px;
+}
+
+.contact h3 {
+	color: rgb(255,255,255);
+}
+
+.contact p {
+	color: rgb(255,255,255);
+}
+
+.icon_contact {
+	float: left;
+	padding: 30px;
+	color: rgb(255,255,255);
+}  
 
 .nopad {
 	padding: 0;
 }
+
+
+/************************
+*		ANIMATIONS		*
+************************/
+/*pfeil-header*/
+
+@-webkit-keyframes pfeilAnimation {
+	100% { 
+		margin-top: 775px;
+	}
+}
+
+@-o-keyframes pfeilAnimation {
+	100% { 
+		margin-top: 775px;
+
+	}
+}
+
+@-moz-keyframes pfeilAnimation {
+	100% { 
+		margin-top: 775px;
+
+	}
+}
+
+@keyframes pfeilAnimation {
+	100% { 
+		margin-top: 775px;
+
+	}
+}
+
+
