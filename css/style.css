@@ -1,3 +1,31 @@
+/* MARTIN ADDITIONS */
+.absoluteBottom {
+	position: absolute;
+	bottom: 40px;
+	width: 40%;
+	left: 50%;
+	margin-left: -20%;
+}
+.absoluteBottom h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+}
+.absoluteBottom h2 {
+	margin: 0;
+	padding: 0;	
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+}
+.postionRelative {
+	position: relative;
+}
+/* MARTIN ADDITIONS */
+
+
 @font-face {
     font-family: "Zwo Pro", sans-serif;
     /*src: url(zwo_pro.woff);*/
