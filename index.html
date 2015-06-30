@@ -7,6 +7,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script  src="js/bootstrap.min.js"></script>
 	<script  src="javascript.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+
+
 </head>
 <body>
 	<header>
@@ -27,6 +30,7 @@
 				<ul class="nav nav-tabs nav-justified">
 
 					<!-- Kategorien -->
+					<!-- <li><a href="#"><img src="img/logo-relex.png" alt="logo" title="logo" width="100%"></a></li>-->
 					<li><a href="#">NEWS</a></li>
 					<li><a href="#Fitness">FITNESS</a></li>
 					<li><a href="#Wellness">WELLNESS</a></li>
@@ -42,8 +46,10 @@
 		<div class="container-fluid nopad postionRelative">
 
 			<div class="absoluteBottom">
-				<h1>AKTIV VITAL RELAXED</h1><br>
-				<h2>Ihr persönlicher Fitnessclub in Schwäbisch Gmünd</h2>
+				<!-- <img src="img/logo-relex.png" alt="logo" title="logo" class="img_logo" width="80%"> -->				
+				<h1>relex</h1><br>
+				<h2>aktiv vital relaxed</h2>
+				<!-- <img src="img/pfeil.png" class="pfeil" width="100%"> -->
 			</div>
 
 
@@ -54,7 +60,7 @@
 		<div class="container-fluid nopad">
 			<div class="row-margin-top">
 				<div class="col-sm-5 welcome">
-					<img src="img/welcome.jpg" alt="relex" title="relex" class="img-welcome" width="100%"></div>
+					<img src="img/welcome2.jpg" alt="relex" title="relex" class="img-welcome" width="100%" height="400px"></div>
 					<div class="col-sm-7 welcome">
 						<div class="box_welcome">
 							<h4>BEI UNS SIND SIE GENAU RICHTIG</h4>
@@ -87,7 +93,7 @@
 						</div>
 					</div>
 					<div class="col-sm-5 gruen_box">
-						<img src="img/milon.jpg" alt="milon" title="milon" width="100%">
+						<img src="img/milon.jpg" alt="milon" title="milon" width="100%" height="400px">
 					</div>
 				</div>
 			</div>		
@@ -174,12 +180,12 @@
 							<!-- 100% layout italic-->
 							<div class="container italic_box">
 								<div class="row">
-									<div class="col-sm-5">
+									<div class="col-sm-3">
 										<div class="box">
 											<h4>WIR BEGLEITEN SIE</h4>
 										</div>
 									</div>
-									<div class="col-sm-7">
+									<div class="col-sm-9">
 										<div class="box">
 											<span>Unser qualifiziertes Team freut sich darauf, Ihnen beim Erreichen Ihrer Ziele zur Seite zu stehen. 
 												Lassen Sie sich vom einzigartigen, modernen Ambiente und der gehobene Ausstattung im relex begeistern.
@@ -193,7 +199,7 @@
 							<div class="container-fluid nopad">
 								<div class="row">
 									<div class="col-sm-7 box_background">
-										<img src="img/lesmills.jpg" class="lesmills" width="100%">
+										<img src="img/lesmills.jpg" class="lesmills" width="100%" height="400px;">
 									</div>
 
 									<div class="col-sm-5 box_background">
@@ -211,26 +217,44 @@
 								</div>
 							</div>
 
-							<!-- 100% layout btn - lesmills-->
+							<!-- 100% layout btn - lesmills-programm-buttons-->
 							<div class="container background_weiss">
 								<div class="row">
 									<div class="col-sm-3 abstand">
 
-										<div class="btn">
+										<button><div class="btn">
+											<img src="img/bodycombat.png" class="btn_icon first-link" width="30%"><br>
 											<a class="first-link" href="#"><h5 class="btn-text">BODYCOMBAT</h5></a>
-											<img src="img/bodycombat.png" class="btn_icon" width="30%"><br>
 
 											<a href="#"><span class="btn-text-italic">Ein kraftvolles <br> Kampfsport-Workout</span></a>
+										</div></button>
+
+										<!-- 100% layout dropdown-text zu buttons-->
+										<div class="container dropdown-text">
+											<div class="row">
+												<div class="col-sm-3">
+													<div class="box">
+														<h4>BODYCOMBAT</h4>
+													</div>
+												</div>
+												<div class="col-sm-9">
+													<div class="box">
+														<span>Dieses hoch energetische Programm beruht auf Techniken des Karate, Boxen, Taekwondo, Tai Chi und Muay Thai. Die Teilnehmer schlagen, boxen und kicken sich nach den Anweisungen des Instruktors die Kalorien vom Leib und bringen das Herz-Kreislauf-System auf Hochtouren.
+														</span>
+													</div>
+												</div>
+												<div class="col-md-10 col-md-offset-10 kursplan-button"><button class="button-kursplan"><h4 class="text-weiss">KURSPLAN</h4></button></div>
+											</div>	
 										</div>
 
 									</div>	
 
 									<div class="col-sm-3 abstand">
-
 										<div class="btn">
-											<a href="#"></a>
-											<img src="img/bodybalance.png" class="btn_icon" width="30%">
-											<h5>BODYBALANCE</h5>
+											<img src="img/bodybalance.png" class="btn_icon first-link" width="30%">
+											<a class="first-link" href="#"><h5 class="btn-text">BODYBALANCE</h5></a>
+
+											<!--<a href="#"><span class="btn-text-italic">Ist ein beruhigende <br> und zentrierende Yoga-, <br> Tai Chi- und Pilates-Workout</span></a>-->
 										</div>
 
 									</div>	
@@ -248,7 +272,28 @@
 
 
 									</div>
+								</div>
+							</div>
 
+							<!-- pull down  -->
+							<div class="container-fluid nopad">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="box_pull_down">
+											<button class="button-maps"><h4 class="text-weiss">ÖFFNEN SIE HIER DEN KURSPLAN</h4></button>
+										</div>	
+									</div>
+								</div>
+							</div>
+
+							<!-- kursplan  -->
+							<div class="container-fluid nopad">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="kursplan">
+											<img src="img/kursplan-img.png" class="kursplan-img" width="100%">
+										</div>	
+									</div>
 								</div>
 							</div>
 
@@ -288,13 +333,13 @@
 								<div class="row">
 									<div class="col-sm-12">
 										<div class="box_relex">
-											<h4>WAS WIR IHNEN BIETEN MÖCHTEN</h4>
+											<h4 class="abstand1">WAS WIR IHNEN BIETEN MÖCHTEN</h4>
 											<h1>RELEX SCHWÄBISCH GMÜND</h1>
-											<p>Unser Fitnessstudio in Schwäbisch Gmünd bietet Ihnen auf einer Gesamtfläche von 1180m² die modernsten 
+											<p class="begrenzung">Unser Fitnessstudio in Schwäbisch Gmünd bietet Ihnen auf einer Gesamtfläche von 1180m² die modernsten 
 												und effektivsten Trainings- und Entspannungsmöglichkeiten für alle Altersgruppen und Leistungsstufen. 
 												Effektives und effizientes Fitnesstraining an hochwertigen, chipkartengesteuerten Geräten, 
 												zahlreiche Kurse für jeden Geschmack und ein harmonisch gestalteter Wellnessbereich lassen keine Wünsche offen. 
-												Individuelle Betreuung und kompetente, qualifizierte Beratung sind bei uns selbstverständlich.Kommen Sie vorbei und erleben Sie das unvergleichliche relex-Ambiente. Unser Team freut sich auf Sie!</p>
+												Individuelle Betreuung und kompetente, qualifizierte Beratung sind bei uns selbstverständlich. Kommen Sie vorbei und erleben Sie das unvergleichliche relex-Ambiente. Unser Team freut sich auf Sie!</p>
 											</div>	
 										</div>
 									</div>
@@ -305,27 +350,38 @@
 									<div class="row">
 										<div class="col-sm-3 box_dynamic">
 											<div>
-												<div class="btn2" id="News"><a href="#"></a><img src="img/newsletter.png" class="btn_icon2" width="25%"><h4>NEWSLETTER</h4><h6>SPAß & ACTION IM RELEX</h6>
+												<div class="btn2" id="News">
+													<img src="img/newsletter.png" class="btn-icon icon-news" width="25%">
+													<h4>NEWSLETTER</h4>
+													<h6>SPAß & ACTION IM RELEX
+													</h6>
 												</div>
 
+												<div class="btn2 aktiv" id="Wellness">
+													<img src="img/wellness-img2.png" class="btn-icon icon-wellness" width="23%">
+													<h4 class="text-weiss">WELLNESS</h4>
+													<h6>TANKEN SIE NEUE ENERGIE</h6>
+												</div>
 
-												<div class="btn2" id="Wellness"><a href="#"></a><img src="img/wellness.png" class="btn_icon2" width="25%"><h4>WELLNESS</h4><h6>TANKEN SIE NEUE ENERGIE</h6></div>
-
-												<div class="btn2" id="Studio"><a href="#"></a><img src="img/studio.png" class="btn_icon2" width="25%"><h4>STUDIO</h4><h6>AKTIV VITAL RELAXED</h6></div>
+												<div class="btn2" id="Studio">
+													<img src="img/studio.png" class="btn-icon icon-studio" width="25%">
+													<h4>STUDIO</h4>
+													<h6>AKTIV VITAL RELAXED</h6>
+												</div>
 
 											</div>	
 										</div>
 										<div class="col-sm-4 box_dynamic">
 											<div class="box_dynamic_img">
-												<div><img src="img/wellness.jpg" width="100%"></div>
+												<div><img src="img/wellness.jpg" width="100%" height="400px"></div>
 											</div>	
 										</div>
 										<div class="col-sm-5 box_dynamic gruen">
 											<div>
 												<div class="wellness-text">
-													<h4>WELLNESS</h4>
+													<h4 class="text-weiss">WELLNESS</h4>
 													<h2>UNSERE WELLNESS OASE</h2>
-													<p>Wir laden Sie auf eine Entspannungsreise in unsere Wellness-Oase ein: 
+													<p class="text-weiss">Wir laden Sie auf eine Entspannungsreise in unsere Wellness-Oase ein: 
 														schwitzen Sie sich frei in der finnischen Sauna, entspannen Sie sich 
 														in unserem Sanarium mit Lichttherapie oder tun Sie ihren Atemwegen 
 														in unserem Dampfbad etwas Gutes.
@@ -333,67 +389,73 @@
 														ganzjährig geöffnete Außenterrasse laden zum Verweilen ein
 														Die optimale Ergänzung nach einem intensiven Training. 
 														Die Wellness-Oase ist es wert ausprobiert zu werden!</p>
-								<!-- <svg><ellipse cx="4" cy="4" rx="4" ry="4"
-								style="fill:rgb(255,255,255);/></svg>-->
-							</div>
-						</div>	
-					</div>
-				</div>
-			</div>
+													</div>
+												</div>	
+											</div>
+										</div>
+									</div>
 
-			<!-- text -->
-			<div class="container-fluid nopad">
-				<div class="row">
-					<div class="col-sm-12 box_kontakt">
-						<div class="box_kontakt_txt">
-							<h4>KONTAKTIEREN SIE UNS</h4>
-						</div>	
-					</div>
-				</div>
-			</div>
+									<!-- text -->
+									<div class="container-fluid nopad">
+										<div class="row">
+											<div class="col-sm-12 box_kontakt">
+												<div class="box_kontakt_txt">
+													<h4>KONTAKTIEREN SIE UNS</h4>
+												</div>	
+											</div>
+										</div>
+									</div>
 
-			<!-- pull down  -->
-			<div class="container-fluid nopad">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="box_pull_down">
-							<h4>ÖFFNEN SIE HIER DIE KARTE</h4>
-						</div>	
-					</div>
-				</div>
-			</div>
-		</body>
-		<footer>
-			<!-- contact window  -->
-			<div class="container-fluid nopad">
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="box_back">	
+									<!-- pull down  -->
+									<div class="container-fluid nopad">
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="box_pull_down">
+													<button class="button-maps"><h4 class="text-weiss">ÖFFNEN SIE HIER DIE KARTE</h4></button>
+												</div>	
+											</div>
+										</div>
+									</div>
 
-							<div class="col-sm-4">
-								<div class="contact" id="Kontakt">
-									<img src="img/pin.png" width="4%">		
-									<h3>HIER FINDEN SIE UNS</h3>
-									<p>Traubentalstraße 8</p>
-									<p>73525 Schwäbisch Gmünd</p>
-									<img src="img/mail.png" width="11%">
-									<h3>EMAIL</h3>
-									<p>mail@relex-aktiv.de</p>
-									<img src="img/phone.png" width="5%">
-									<h3>TELEFON</h3>
-									<p>07171 - 6 61 64</p>
-								</div>
-							</div>
-							<div class="col-sm-4">
-								<div class="contact">
-									<h3>HINTERLASSEN SIE UNS EINE NACHRICHT</h3>
-								</div>	
-							</div>
-						</div>	
-					</div>
-				</div>
-			</div>
-		</footer>
+									<div class="container-fluid nopad">
+										<div class="row">
+											<div class="col-sm-12">
+												<div id="googleMap" style="width:100%;height:300px;"></div>			
+											</div>
+										</div>
+									</div>
+								</body>
+								<footer>
+									<!-- contact window  -->
+									<div class="container-fluid nopad">
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="box_back">	
+
+													<div class="col-sm-4">
+														<div class="contact" id="Kontakt">
+															<img src="img/pin.png" width="4%">		
+															<h3>HIER FINDEN SIE UNS</h3>
+															<p>Traubentalstraße 8</p>
+															<p>73525 Schwäbisch Gmünd</p>
+															<img src="img/mail.png" width="11%">
+															<h3>EMAIL</h3>
+															<p>mail@relex-aktiv.de</p>
+															<img src="img/phone.png" width="5%">
+															<h3>TELEFON</h3>
+															<p>07171 - 6 61 64</p>
+														</div>
+													</div>
+													<div class="col-sm-4">
+														<div class="contact">
+															<h3>HINTERLASSEN SIE UNS EINE NACHRICHT</h3>
+														</div>	
+													</div>
+												</div>	
+											</div>
+										</div>
+									</div>
+								</footer>
 
 
-		</html>
+								</html>

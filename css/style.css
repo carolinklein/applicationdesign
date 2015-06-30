@@ -35,6 +35,7 @@ h3 {
 	font-weight: bold;
 	color: rgb(77,77,77);
 
+
 	margin-bottom: 40px;
 	margin-top: 70px;
 }
@@ -65,19 +66,17 @@ titel {
 	font-size: 50px;
 	font-weight: bold;
 	color: rgb(255,255,255);
-
 }
 
 subtitel {
 	font-size: 20px;
 	color: rgb(255,255,255);
-
 }
 
 /* MARTIN ADDITIONS */
 .absoluteBottom {
 	position: absolute;
-	bottom: 230px;
+	bottom: 30%;
 	width: 50%;
 	left: 50%;
 	margin-left: -20%;
@@ -86,14 +85,15 @@ subtitel {
 .absoluteBottom h1 {
 	margin: 0;
 	padding: 0;
-	font-size: 50px;
+	font-size: 300px;
 	text-align: center;
-	color: #fff;
+	color: rgb(121,173,38);
 }
 .absoluteBottom h2 {
 	margin: 0;
 	padding: 0;	
-	font-size: 20px;
+	font-size: 100px;
+	font-style: italic;
 	font-weight: lighter;
 	text-align: center;
 	color: #fff;
@@ -111,18 +111,15 @@ p {
 	font-weight: normal;
 	line-height: 1,5625em; /*25px*/
 	color: rgb(77,77,77);
+
 }
 
 /*italic*/
 span {
-	font-size: 1,125em; /*18px*/
+	font-size: 16px; /*18px*/
 	line-height: 30px;
 	font-style: italic;
 	color: rgb(77,77,77);
-}
-
-header {
-	position: fixed;
 }
 
 .navbar .navbar-default {
@@ -153,15 +150,6 @@ header {
 	font-weight: bold;
 }
 
-.img_relative{
-	position: relative;
-	background-color: white;
-}
-
-.img_header {
-	position: relative;
-}
-
 a:link, a:hover, a:active, a:focus, a:visited {
 	color: inherit;
 	text-decoration: none;
@@ -188,7 +176,7 @@ a:hover{
 
 .pfeil {
 	position: absolute;
-	margin-top: 770px;
+	margin-top: 500px;
 	margin-left: 720px;
 
 	width: 20px;
@@ -198,10 +186,6 @@ a:hover{
 	-webkit-animation: pfeilAnimation 2s ease-in-out infinite;
 	-moz-animation: pfeilAnimation 2s ease-in-out infinite;
 	animation: pfeilAnimation 2s ease-in-out infinite;
-}
-
-.row-margin-top {
-	margin-top: 750px;
 }
 
 .box_welcome {
@@ -219,6 +203,7 @@ a:hover{
 	background-color: rgb(121,173,38);
 	height: 400px;
 	margin: 0;
+	padding: 0;
 }
 
 .box_milon {
@@ -244,6 +229,7 @@ a:hover{
 .box_background {
 	background-color: rgb(121,173,38);
 	height: 400px;
+	padding: 0;
 }
 
 .background_weiss {
@@ -267,7 +253,11 @@ a:hover{
 	padding: 30px;
 }
 
-/*.btn .first-link {
+.btn:hover {
+	background-color: rgb(121,173,38);
+}
+
+.btn-text .first-link {
 	-webkit-transition: 0.3s;
 	-moz-transition: 0.3s;
 	-ms-transition: 0.3s;
@@ -276,24 +266,33 @@ a:hover{
 }
 
 .first-link {
-	margin-top: 0em;
 }
 
 .btn:hover .first-link {
-	margin-top: -4em;
+	margin-top: -80px; 
 }
-*/
-
-
-.btnActive {
-	background-color: green;
-	color: blue;
-}
-
 
 .btn_icon {
 	padding-top: 90px;
 	padding-bottom: 10px;
+}
+
+.container .dropdown-text {
+	background-color: white;
+}
+
+.kursplan-button {
+	padding-top: 90px;
+}
+
+.button-kursplan {
+	width: 150px;
+	height: 40px;
+	background-color: rgb(77,77,77);
+}
+
+.dropdown-text {
+	margin-top: 100px;
 }
 
 .rand {
@@ -312,38 +311,75 @@ a:hover{
 	background-color: white;
 	height: 400px;
 }
+
 .box_relex {
+	text-align: center;
+	background-color: white;
+	width: 100%;
+	height: 500px;
+}
+
+.abstand1 {
+	padding-top: 100px;
+	padding-bottom: 40px;
+}
+
+.begrenzung {
+	width: 50%;
+	left: 50%;
+	margin-left: 25%;
+	bottom: 90px;
 	text-align: center;
 }
 
-.btn_icon2 {
+.box_dynamic {
+	padding: 0px;
+	background-color: white;
+	height: 400px;
+}
+
+.btn-icon {
 	float: left;
-	padding: 23px;
+}
+
+.icon-news {
+	padding: 15px 33px 20px 10px;
+}
+
+.icon-wellness {
+	padding: 7px 20px 20px 10px;
+}
+
+.icon-studio {
+	padding: 15px 33px 20px 10px;
 }
 
 .btn2 {
-	height: 120px;
-	padding-top: 25px;
-	padding-left: 40px;
+	height: 133px;
+	padding-top: 35px;
+	padding-left: 50px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: rgb(121,173,38);
 	border-radius: 0px;
 }
 
-.btn2:hover {
+.aktiv {
 	background-color: rgb(77,77,77);
-}
-
-.box_dynamic {
-	padding: 0px;
 }
 
 .box_dynamic.gruen {
 	background-color: rgb(121,173,38);
 }
 
+.wellness-text {
+	padding-top: 40px;
+	padding-left: 60px;
+	padding-right: 190px;
+}
+
 .box_kontakt {
+	background-color: white;
 	text-align: center;
 	height: 140px;
 }
@@ -360,12 +396,22 @@ a:hover{
 	padding-top: 10px;
 }
 
-.pfeil_karte {
-	margin-right: 20px;
+.kursplan {
+	height: 800px;
+	background-color: white;
 }
 
-.icon_map {
-	float: left;
+.text-weiss {
+	color: white;
+}
+
+.text-weiss:hover{
+	color: rgb(77,77,77);
+}
+
+.button-maps {
+	text-decoration: none;
+	background-color: transparent;
 }
 
 .box_back {
