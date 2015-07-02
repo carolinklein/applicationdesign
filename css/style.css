@@ -6,7 +6,7 @@
 body {
 	margin-top: 0px;
 	font-family: "Zwo Pro";
-	color: rgb(77,77,77);
+	/*color: rgb(77,77,77);*/
 }
 
 /*grüne headline*/
@@ -219,6 +219,10 @@ a:hover{
 	background-color: rgb(121,173,38);
 	height: 500px;
 }
+/* hier die background color für angebote reinschreiben*/
+.fullGreen {
+	background-color: green;
+}
 
 .italic_box {
 	background-color: white;
@@ -406,7 +410,7 @@ a:hover{
 }
 
 .text-weiss:hover{
-	color: rgb(77,77,77);
+	/*color: rgb(77,77,77);*/
 }
 
 .button-maps {
@@ -470,4 +474,24 @@ a:hover{
 	}
 }
 
+.icon1 {
+	background-image: url(img/bodycombat.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+.btn-text-italic {
+	display: none;
+}
 
+.testButtonClass:hover > .btn-text-italic {
+	display: inline;
+}
+
+
+image {
+	opacity: 1.0;
+	-webkit-transition: 0.25s;
+}
+image:hover {
+	opacity: 0.5;
+}

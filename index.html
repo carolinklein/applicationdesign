@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>relex</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script  src="js/bootstrap.min.js"></script>
 	<script  src="javascript.js"></script>
@@ -14,7 +14,7 @@
 <body>
 	<header>
 		<!-- navigation-->
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid nav">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<!-- Burger -->
@@ -60,7 +60,7 @@
 		<div class="container-fluid nopad">
 			<div class="row-margin-top">
 				<div class="col-sm-5 welcome">
-					<img src="img/welcome2.jpg" alt="relex" title="relex" class="img-welcome" width="100%" height="400px"></div>
+					<img src="img/welcome2.jpg" alt="relex" title="relex" class="img-welcome" height="400px"></div>
 					<div class="col-sm-7 welcome">
 						<div class="box_welcome">
 							<h4>BEI UNS SIND SIE GENAU RICHTIG</h4>
@@ -131,51 +131,54 @@
 					</div>
 
 					<!-- 100% layout angebot-->
-					<div class="container angebot">
-						<div class="row">
-							<div class="col-sm-4 angebot">
-								<div class="box_cardiotraining">
-									<h3>CARDIOTRAINING</h3>
-									<p>Zu Beginn ermittelt Ihr Trainier mit Ihnen Ihren 
-										optimalen Trainingspuls, den Sie für ein effektives 
-										und richtiges Cardiotraining mittels Brustgurt oder 
-										Pulsuhr im Auge behalten sollten. Dann können 
-										Sie sich Ihr Lieblings-Gerät aussuchen.
-										Ob Fahrradergometer, Crosstrainer oder Laufband.
-										Bei uns findet jeder das Gerät, das am besten zu ihm passt! 
-										Wir beraten Sie umfassend und helfen Ihnen dabei, 
-										Ihre Ziele mit dem richtigen Ausdauertraining zu erreichen.
-									</p>
-								</div>
-							</div>
-							<div class="col-sm-4 angebot">
-								<div class="box_krafttraining">
-									<h3>KRAFTTRAINING</h3>
-									<p>Krafttraining heißt nicht, sinnlos Berge von
-										Muskeln aufzubauen. Der Stütz- und Bewegungsapparat 
-										möchte ständig beansprucht werden, damit er seine 
-										Aufgaben optimal erfüllen kann und nicht 'einrostet'. 
-										Mit einer trainierten Muskulatur bleiben Sie bis ins 
-										Alter fit, beweglich und gesund. Kräftigen Sie Ihre
-										Muskulatur an verschiedenen freien Geräten, je nach
-										Zielsetzung und Vorliebe.</p>				
+					<div class="fullGreen">
+						<div class="container angebot">
+							<div class="row">
+								<div class="col-sm-4 angebot">
+									<div class="box_cardiotraining">
+										<h3>CARDIOTRAINING</h3>
+										<p>Zu Beginn ermittelt Ihr Trainier mit Ihnen Ihren 
+											optimalen Trainingspuls, den Sie für ein effektives 
+											und richtiges Cardiotraining mittels Brustgurt oder 
+											Pulsuhr im Auge behalten sollten. Dann können 
+											Sie sich Ihr Lieblings-Gerät aussuchen.
+											Ob Fahrradergometer, Crosstrainer oder Laufband.
+											Bei uns findet jeder das Gerät, das am besten zu ihm passt! 
+											Wir beraten Sie umfassend und helfen Ihnen dabei, 
+											Ihre Ziele mit dem richtigen Ausdauertraining zu erreichen.
+										</p>
 									</div>
 								</div>
 								<div class="col-sm-4 angebot">
-									<div class="box_myline">
-										<h3>MYLINE</h3>
-										<p>In nur 8 Wochen und 8 Kurs-Treffen werden 
-											Sie zusammen mit anderen Abnehmwilligen
-											Ihr Ziel erreichen. Kinderleicht und sehr verständlich 
-											vermitteln Ihnen unsere Ernährungs-Coach´s die 
-											Zusammenhänge zwischen gesunder Ernährung, 
-											richtigem Fitnesstraining und einer positiven 
-											Lebenseinstellung. Das ist das ganze 
-											Erfolgs-Geheimnis von myline.</p>				
+									<div class="box_krafttraining">
+										<h3>KRAFTTRAINING</h3>
+										<p>Krafttraining heißt nicht, sinnlos Berge von
+											Muskeln aufzubauen. Der Stütz- und Bewegungsapparat 
+											möchte ständig beansprucht werden, damit er seine 
+											Aufgaben optimal erfüllen kann und nicht 'einrostet'. 
+											Mit einer trainierten Muskulatur bleiben Sie bis ins 
+											Alter fit, beweglich und gesund. Kräftigen Sie Ihre
+											Muskulatur an verschiedenen freien Geräten, je nach
+											Zielsetzung und Vorliebe.</p>				
 										</div>
 									</div>
+									<div class="col-sm-4 angebot">
+										<div class="box_myline">
+											<h3>MYLINE</h3>
+											<p>In nur 8 Wochen und 8 Kurs-Treffen werden 
+												Sie zusammen mit anderen Abnehmwilligen
+												Ihr Ziel erreichen. Kinderleicht und sehr verständlich 
+												vermitteln Ihnen unsere Ernährungs-Coach´s die 
+												Zusammenhänge zwischen gesunder Ernährung, 
+												richtigem Fitnesstraining und einer positiven 
+												Lebenseinstellung. Das ist das ganze 
+												Erfolgs-Geheimnis von myline.</p>				
+											</div>
+										</div>
+									</div>	
 								</div>	
 							</div>
+
 
 							<!-- 100% layout italic-->
 							<div class="container italic_box">
@@ -222,12 +225,23 @@
 								<div class="row">
 									<div class="col-sm-3 abstand">
 
-										<button><div class="btn">
+										<!--<button class="testButtonClass"><div class="btn">
 											<img src="img/bodycombat.png" class="btn_icon first-link" width="30%"><br>
 											<a class="first-link" href="#"><h5 class="btn-text">BODYCOMBAT</h5></a>
 
 											<a href="#"><span class="btn-text-italic">Ein kraftvolles <br> Kampfsport-Workout</span></a>
-										</div></button>
+										</div></button>-->
+										<div class="testButtonClass">
+											<div class="icon1">
+												
+											</div>
+											<h5 class="btn-text">
+												BODYCOMBAT
+											</h5>
+											<span class="btn-text-italic">
+												Ein kraftvolles <br> Kampfsport-Workout
+											</span>
+										</div>
 
 										<!-- 100% layout dropdown-text zu buttons-->
 										<div class="container dropdown-text">
