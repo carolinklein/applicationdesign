@@ -219,6 +219,10 @@ a:hover{
 	background-color: rgb(121,173,38);
 	height: 500px;
 }
+/* hier die background color für angebote reinschreiben*/
+.fullGreen {
+	background-color: green;
+}
 
 .fullGreen {
 	background-color: rgb(121,173,38)
@@ -486,8 +490,13 @@ a:hover{
 .testButtonClass:hover > .btn-text-italic {
 	display: inline;
 }
+<<<<<<< HEAD
 
 
+=======
+
+
+>>>>>>> origin/master
 image {
 	opacity: 1.0;
 	-webkit-transition: 0.25s;
