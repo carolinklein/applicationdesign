@@ -6,7 +6,7 @@
 body {
 	margin-top: 0px;
 	font-family: "Zwo Pro";
-	color: rgb(77,77,77);
+	/*color: rgb(77,77,77);*/
 }
 
 /*grüne headline*/
@@ -16,7 +16,7 @@ h1 {
 	line-height: 3,75em;
 	color: rgb(121,173,38);
 
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 
 /*weiße headline*/
@@ -26,7 +26,7 @@ h2 {
 	line-height: 3,75em;
 	color: rgb(255,255,255);
 
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 
 /*subhead*/
@@ -42,7 +42,7 @@ h3 {
 
 /*sub-subhead*/
 h4 {
-	font-size: 14px;/*0,875em*/
+	font-size: 16px;/*0,875em*/
 	font-weight: bold;
 	color: rgb(77,77,77);
 }
@@ -106,8 +106,8 @@ subtitel {
 
 /*fliesstext*/
 p {
-	font-size: 14px; /*0,875em*/
-	line-height: 23px;
+	font-size: 16px; /*0,875em*/
+	line-height: 26px;
 	font-weight: normal;
 	line-height: 1,5625em; /*25px*/
 	color: rgb(77,77,77);
@@ -218,6 +218,10 @@ a:hover{
 .container .angebot {
 	background-color: rgb(121,173,38);
 	height: 500px;
+}
+
+.fullGreen {
+	background-color: rgb(121,173,38)
 }
 
 .italic_box {
@@ -406,7 +410,7 @@ a:hover{
 }
 
 .text-weiss:hover{
-	color: rgb(77,77,77);
+	/*color: rgb(77,77,77);*/
 }
 
 .button-maps {
@@ -470,4 +474,24 @@ a:hover{
 	}
 }
 
+.icon1 {
+	background-image: url(img/bodycombat.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+.btn-text-italic {
+	display: none;
+}
 
+.testButtonClass:hover > .btn-text-italic {
+	display: inline;
+}
+
+
+image {
+	opacity: 1.0;
+	-webkit-transition: 0.25s;
+}
+image:hover {
+	opacity: 0.5;
+}
