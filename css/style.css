@@ -16,7 +16,7 @@ h1 {
 	line-height: 3,75em;
 	color: rgb(121,173,38);
 
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 
 /*weiße headline*/
@@ -26,7 +26,7 @@ h2 {
 	line-height: 3,75em;
 	color: rgb(255,255,255);
 
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
 
 /*subhead*/
@@ -42,7 +42,7 @@ h3 {
 
 /*sub-subhead*/
 h4 {
-	font-size: 16px;/*0,875em*/
+	font-size: 14px;/*0,875em*/
 	font-weight: bold;
 	color: rgb(77,77,77);
 }
@@ -106,8 +106,8 @@ subtitel {
 
 /*fliesstext*/
 p {
-	font-size: 16px; /*0,875em*/
-	line-height: 26px;
+	font-size: 14px; /*0,875em*/
+	line-height: 23px;
 	font-weight: normal;
 	line-height: 1,5625em; /*25px*/
 	color: rgb(77,77,77);
@@ -222,10 +222,6 @@ a:hover{
 /* hier die background color für angebote reinschreiben*/
 .fullGreen {
 	background-color: green;
-}
-
-.fullGreen {
-	background-color: rgb(121,173,38)
 }
 
 .italic_box {
@@ -490,16 +486,12 @@ a:hover{
 .testButtonClass:hover > .btn-text-italic {
 	display: inline;
 }
-<<<<<<< HEAD
 
 
-=======
-
-
->>>>>>> origin/master
 image {
 	opacity: 1.0;
 	-webkit-transition: 0.25s;
+	
 }
 image:hover {
 	opacity: 0.5;
