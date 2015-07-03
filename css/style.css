@@ -16,7 +16,7 @@ h1 {
 	line-height: 3,75em;
 	color: rgb(121,173,38);
 
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
 
 /*weiße headline*/
@@ -26,7 +26,7 @@ h2 {
 	line-height: 3,75em;
 	color: rgb(255,255,255);
 
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
 
 /*subhead*/
@@ -106,8 +106,8 @@ subtitel {
 
 /*fliesstext*/
 p {
-	font-size: 14px; /*0,875em*/
-	line-height: 23px;
+	font-size: 17px; 
+	line-height: 28px;
 	font-weight: normal;
 	line-height: 1,5625em; /*25px*/
 	color: rgb(77,77,77);
@@ -190,7 +190,7 @@ a:hover{
 
 .box_welcome {
 	text-align: center;
-	padding: 40px 40px 40px 40px;
+	padding: 40px 40px 40px auto;
 }
 
 .welcome {
@@ -219,9 +219,8 @@ a:hover{
 	background-color: rgb(121,173,38);
 	height: 500px;
 }
-/* hier die background color für angebote reinschreiben*/
 .fullGreen {
-	background-color: green;
+	background-color: rgb(121,173,38);
 }
 
 .italic_box {
@@ -233,13 +232,31 @@ a:hover{
 .box_background {
 	background-color: rgb(121,173,38);
 	height: 400px;
-	padding: 0;
+	margin: 0;
 }
 
 .background_weiss {
 	margin-top: 90px;
 	background-color: white;
 	height: 600px;
+}
+
+.icon-bodycombat {
+	background-image: url(img/bodycombat.png);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+.btn-text{
+
+}
+
+.btn-text-italic {
+	display: none;
+}
+
+.testButtonClass:hover > .btn-text-italic {
+	display: inline;
 }
 
 .abstand {
@@ -255,25 +272,6 @@ a:hover{
 	border-color: rgb(121,173,38);
 	border-radius: 0px;
 	padding: 30px;
-}
-
-.btn:hover {
-	background-color: rgb(121,173,38);
-}
-
-.btn-text .first-link {
-	-webkit-transition: 0.3s;
-	-moz-transition: 0.3s;
-	-ms-transition: 0.3s;
-	-o-transition: 0.3s;
-	transition: 0.3s;     
-}
-
-.first-link {
-}
-
-.btn:hover .first-link {
-	margin-top: -80px; 
 }
 
 .btn_icon {
@@ -292,6 +290,8 @@ a:hover{
 .button-kursplan {
 	width: 150px;
 	height: 40px;
+	padding: 13px 10px 10px 42px;
+	margin-bottom: 100px;
 	background-color: rgb(77,77,77);
 }
 
@@ -376,6 +376,10 @@ a:hover{
 	background-color: rgb(121,173,38);
 }
 
+.rahmen-bildergalerie {
+	height: 650px;
+	background-color: rgb(121,173,38);
+}
 .wellness-text {
 	padding-top: 40px;
 	padding-left: 60px;
@@ -407,15 +411,6 @@ a:hover{
 
 .text-weiss {
 	color: white;
-}
-
-.text-weiss:hover{
-	/*color: rgb(77,77,77);*/
-}
-
-.button-maps {
-	text-decoration: none;
-	background-color: transparent;
 }
 
 .box_back {
@@ -474,25 +469,21 @@ a:hover{
 	}
 }
 
-.icon1 {
-	background-image: url(img/bodycombat.png);
-	background-position: 0px 0px;
-	background-repeat: no-repeat;
-}
-.btn-text-italic {
-	display: none;
-}
-
-.testButtonClass:hover > .btn-text-italic {
-	display: inline;
-}
 
 
-image {
+.image {
 	opacity: 1.0;
 	-webkit-transition: 0.25s;
 	
 }
-image:hover {
-	opacity: 0.5;
+.image:hover {
+	opacity: 0;
+}
+
+.image-text {
+	display: none;
+}
+
+.img_galerie .text:hover > .image-text {
+	display: inline;
 }
